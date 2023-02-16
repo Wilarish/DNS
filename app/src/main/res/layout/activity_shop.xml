@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop">
+
+    <ImageButton
+        android:id="@+id/btn_notify3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="12dp"
+        android:background="#4FD899"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_apps3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <ImageButton
+        android:id="@+id/btn_apps3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="44dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_notify3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_chat3"
+        app:layout_constraintTop_toTopOf="@+id/btn_notify3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageButton
+        android:id="@+id/btn_fault3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FF5722"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_chat3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_chat3"
+        app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+    <ImageButton
+        android:id="@+id/btn_chat3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="44dp"
+        android:background="#E83737"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_apps3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fault3"
+        app:layout_constraintTop_toTopOf="@+id/btn_apps3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    tools:context=".Glavnaya">
+
+    <ImageButton
+        android:id="@+id/btn_notify"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="15dp"
+        android:background="#4FD899"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_chat"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <ImageButton
+        android:id="@+id/btn_chat"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="44dp"
+        android:background="#E83737"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_notify"
+        app:layout_constraintEnd_toStartOf="@+id/btn_apps"
+        app:layout_constraintTop_toTopOf="@+id/btn_notify"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+    <ImageButton
+        android:id="@+id/btn_apps"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="44dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_chat"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fault"
+        app:layout_constraintTop_toTopOf="@+id/btn_chat"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageButton
+        android:id="@+id/btn_fault"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FF5722"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_apps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_apps"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_dialog_alert" />
+
+    <Button
+        android:id="@+id/click_btn"
+        android:layout_width="134dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="450dp"
+        android:onClick="Click"
+        android:text="Click (10$ for one tap)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/click_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
